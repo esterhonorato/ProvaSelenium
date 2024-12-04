@@ -1,0 +1,49 @@
+{
+  "id": "8ecfe144-8a1a-48cb-a563-b6c6183acc45",
+  "version": "2.0",
+  "name": "questao7",
+  "url": "https://example.com",
+  "tests": [{
+    "id": "ec916b9c-b42b-4112-b684-a66b9b94c495",
+    "name": "questao7",
+    "commands": [{
+      "id": "424a6425-8709-4804-8ce2-a3bb5e76b9aa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d8c2093-1016-427e-8290-3479cfc83d57",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98f801b8-5c42-4fed-ae2a-b469504e457e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=More information...",
+      "targets": [
+        ["linkText=More information...", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'More information...')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.iana.org/domains/example')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'More information...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e6f2247a-735f-4fd5-89d6-b7d004031a39",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec916b9c-b42b-4112-b684-a66b9b94c495"]
+  }],
+  "urls": ["https://example.com/"],
+  "plugins": []
+}
